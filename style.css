@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    position: relative;
+}
+
+body{
+    margin:0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+}
+
+/* -----------Navigation Bar------ */
+#navigation{
+    height: 60px;
+    background-color: teal;
+    text-align: center;
+    
+}
+
+#navigation a{
+    margin: 8px 10%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    font-weight: 500;
+    background-color: rgb(6, 36, 36);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#navigation a:hover{
+    background: white;
+    color:rgb(6, 36, 36);
+    
+}
+
+
+
+
+
+
+
+/* ---------Home Section--------- */
+.home{
+    background-color: rgb(169, 169, 226);
+    height: 850px;
+    position:relative;
+}
+
+#name{
+    height:750px;
+    padding: 50px 30px;
+    text-align: center;
+    text-shadow: 5px 5px 2px #444242;
+    color: rgb(184, 137, 184);
+}
+
+#name h1{
+    font-size: 10em;
+}
+
+#first_name{
+    font-weight: 600;
+}
+#last_name{
+    font-weight: 400;
+}
+
+
+
+.circle{
+    margin-top: 300px;
+    background: rgb(6, 75, 131);
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    display: inline-block;
+    position: relative;
+} 
+
+.circle img{
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+}
+
+
+.circle img:hover{
+    opacity: 70%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 3px black;
+}
+
+.circle:hover{
+    transform: translateY(50px);
+    transition: transform 1s;
+}
+
+/* -----------About section------------ */
+
+.about{
+    background-color: lightsteelblue;
+    height: 500px;
+    text-align: center;
+    font-size: 150%;
+    position: relative;
+}
+
+.about div{
+    height:450px;
+    display: inline-block;
+    padding: 50px 60px 50px 60px;
+}
+
+
+.about div h2{
+    text-decoration: none;
+}
+
+
+.about div p{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right:3em;
+    line-height: 2em;
+}
+
+#arrow2 img{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#arrow2 img:hover{
+    opacity: 70%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 3px black;
+    transform: translate(10px, 10px) rotate(360deg);
+    transition: transform 2s;
+}
+
+
+
+
+/* -------------movie section-----------*/
+.movie{
+    background-color: rgb(110, 207, 231);
+    text-align: center;
+    font-size: 150%;
+    position: relative;
+}
+
+.movie h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    text-decoration: underline;
+    padding-top: 50px;
+}
+
+
+.row{
+    height: 500px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movies{
+    height:380px;
+    width: 290px;
+    display: flex;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.movies:hover{
+    transform: rotateY(180deg);
+}
+
+.movies >div, img{
+    width: 100%;
+    height:100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+.description{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    border-radius: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------footer-------------- */
+#foot{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(9, 160, 160);
+    right:0;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+
+#foot a{
+    padding-top:10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white; 
+    font-size: medium;
+    font-weight: 500;
+}
+
+#foot a:hover{
+    color: rgb(133, 131, 131);
+    font-size: large;
+}
